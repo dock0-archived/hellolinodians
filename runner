@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+/opt/source/bin/check -p
+
+sleep 1h
+
