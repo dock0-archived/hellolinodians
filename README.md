@@ -11,6 +11,10 @@ Container for [my weird Twitter bot](https://github.com/akerl/hellolinodians)
 ```
 cat > env_file <<EOF
 DEADMANSSNITCH_URL=https://nosnch.in/YOUR_SNITCH_ID
+TWITTER_CONSUMER_KEY=<token>
+TWITTER_CONSUMER_SECRET=<token>
+TWITTER_ACCESS_TOKEN=<token>
+TWITTER_ACCESS_SECRET=<token>
 EOF
 docker pull dock0/hellolinodians
 docker run -d --env-file=env_file dock0/hellolinodians
