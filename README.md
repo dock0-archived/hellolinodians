@@ -15,6 +15,8 @@ TWITTER_CONSUMER_KEY=<token>
 TWITTER_CONSUMER_SECRET=<token>
 TWITTER_ACCESS_TOKEN=<token>
 TWITTER_ACCESS_SECRET=<token>
+TWITTER_DM_REMOVALS=yes
+TWITTER_DM_TARGET=akerl
 EOF
 docker pull dock0/hellolinodians
 docker run -d --env-file=env_file dock0/hellolinodians
