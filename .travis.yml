@@ -1,0 +1,13 @@
+sudo: required
+dist: trusty
+services:
+- docker
+install:
+- docker build -t test .
+script:
+- docker run -ti test /bin/true
+- docker run -ti test /bin/bash --version
+notifications:
+  email: false
+  slack:
+    secure: URhILWnD7aM0UDGw5dduVJSPsV14YG9LeP8OXJfARLTOpMLi3+mjLf1A6QtRkIC3tYNi2vK5u8JvFfZxJ2/wGiqG2o5j34Cn4bYRZWQvbmfrXonQAc+jsWEg7DGXcloN6DIyatn86FSe0HJPOA/+6Y7dL3pR3j+VELBnZm6vtu+eY8/OqcpZM5OSqLgOM/dX3pTvkDf5F8QfnfbRbhIJLvQUeBQ1Ray3l5GFYk9z7yJdoMnhfFQmNXUVw0yytOq7vDFJqzA94DP9PSEVtf1ec7FdhWNHVqJvTglcaIGfkT6oSBKqLURfn2d7y+rcJGLcIfNcyXkINyg26BM6EbiZmdREDY+Yasm9QfpdOO0YEx3mnZSrHKeU47Wm9f+giKNK6WKDsZss8rf0clobY5cg9Nulz265tG7VJNf/21A1acpyEYvg6RIt6kw0wWT9gTwCVIac5gwmRALeSGDWTp6qNe7WWti4Jr7/Tgc8jkUTq6nJD+5HsQlDrIjRg/aBWnGcf26/Rev75JZFQNlDCxDHNiUWQZIZMjpdJkfX6P7ZrbFUAvekR7y4UiHcEIMhdaTE0GSEeYcgNbPz382s/t9Aywm7QSEhG+H/qIv6owpvBn1wEWDsLFVUte6GEgpphXj5vWYX7QTALtdb38VsOW8GGYalgE3BHeBjeK9iirQEoi0=
